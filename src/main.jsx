@@ -15,6 +15,7 @@ import AddProductPage from "./pages/AddProductPage";
 import CartPage from "./pages/CartPage";
 import UpdateProductPage from "./pages/UpdateProductPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
+import HomePage from "./pages/HomePage";
 
 
 
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <h1>Home Page.</h1>,
+        element: <HomePage/>,
       },
       {
         path: '/products/:id',

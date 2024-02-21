@@ -33,7 +33,7 @@ const AddProductPage = () => {
 
     return (
         <div className="bg-gray rounded-lg">
-            <div className="text-center font-black text-2xl md:text-4xl p-10 md:p-20">
+            <div className="text-center font-semibold text-2xl md:text-4xl p-10 md:p-20">
                 <h2>Add Product</h2>
             </div>
             <div className="pb-10 md:pb-20 px-10 md:px-20">

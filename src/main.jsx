@@ -6,13 +6,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from "./components/Root";
+import AuthProvider from "./providers/AuthProvider";
 
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Root/>,
+    element: <Root />,
     errorElement: <h2>Page Not Found!!!</h2>,
     children: [
       {
@@ -26,6 +27,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>
 );

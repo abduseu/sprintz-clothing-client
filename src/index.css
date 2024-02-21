@@ -10,3 +10,22 @@ body{
 span{
     color: #0056D2;
 }
+
+.active{
+    color: #0056D2;
+}
+.bg-gray{
+    background-color: #f2f2f7;
+}
+.bg-blue{
+    background-color: #0056D2;
+}
+.blue{
+    color: #0056D2;
+}
+.bg-green{
+    background-color: #16A34A;
+}
+.green{
+    color: #16A34A;
+}

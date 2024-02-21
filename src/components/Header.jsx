@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
+import { GiSprint } from "react-icons/gi";
 
 const Header = () => {
     const { user, logOut } = useAuth()
@@ -24,7 +25,6 @@ const Header = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/add-product">Add Product</NavLink></li>
         <li><NavLink to="/cart">My Cart</NavLink></li>
-        <li><NavLink onClick={handleSignout}>Signout</NavLink></li>
     </>
 
     return (
@@ -32,7 +32,7 @@ const Header = () => {
             {/* Logo & Button */}
             <div className="flex flex-col md:flex-row md:gap-10 items-center justify-between mb-2">
                 <div>
-                    <Link to="/" className="text-3xl font-semibold flex items-center gap-2">Sprintz</Link>
+                    <Link to="/" className="text-3xl font-semibold flex items-center gap-2"><GiSprint />SPRINTZ</Link>
                 </div>
                 <div className="mt-6 md:mt-0">
                     <div>
@@ -48,7 +48,7 @@ const Header = () => {
                                         </label>
                                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded">
                                             <li className="whitespace-nowrap">{user.displayName}</li>
-                                            <li><Link to={'/'}>Dashboard</Link></li>
+                                            {/* <li><Link to={'/'}>Dashboard</Link></li> */}
                                             <li><Link onClick={handleSignout}>Signout</Link></li>
                                         </ul>
                                     </div>

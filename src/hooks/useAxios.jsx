@@ -5,8 +5,8 @@ export const clientBase = 'http://localhost:5173/'
 //export const clientBase = 'firebase link will be added here'
 
 export const axiosBase = axios.create({
-    baseURL: 'http://localhost:5000',
-    //baseURL: 'vercel link will be added here',
+    //baseURL: 'http://localhost:5000',
+    baseURL: 'https://sprintz-clothing-server.vercel.app/',
 })
 
 const useAxios = (url) => {

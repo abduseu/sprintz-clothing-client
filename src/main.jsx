@@ -8,6 +8,8 @@ import {
 import Root from "./components/Root";
 import AuthProvider from "./providers/AuthProvider";
 import ErrorPage from "./pages/ErrorPage";
+import LoginPage from "./pages/LoginPage";
+import RegistrationPage from "./pages/RegistrationPage";
 
 
 
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <h1>Home Page.</h1>,
+      },
+      {
+        path: '/login',
+        element: <LoginPage />,
+      },
+      {
+        path: '/signup',
+        element: <RegistrationPage />,
       },
     ]
   }

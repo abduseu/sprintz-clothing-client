@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import ContactForm from "../components/ContactForm";
 import Faq from "../components/Faq";
 import Newsletter from "../components/Newsletter";
 import ProductCard from "../components/ProductCard";
@@ -23,8 +24,9 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <Newsletter></Newsletter>
             <Faq></Faq>
+            <ContactForm></ContactForm>
+            <Newsletter></Newsletter>
         </div>
     );
 };

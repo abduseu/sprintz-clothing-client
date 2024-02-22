@@ -1,8 +1,10 @@
-# React + Vite
+# SPRINTZ - Online Clothing Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project features and functionalities 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+** Project features:**
+1. Firebase authentication used for login and registration.
+2. An user can add products to the store.
+3. To change product information there is an update button
+4. From details page, users can add products to the cart.
+5. In the cart page, all the added products will be displayed.

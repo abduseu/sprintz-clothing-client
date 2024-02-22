@@ -1,5 +1,8 @@
 import Banner from "../components/Banner";
+import Faq from "../components/Faq";
+import Newsletter from "../components/Newsletter";
 import ProductCard from "../components/ProductCard";
+import Sale from "../components/Sale";
 import useAxios from "../hooks/useAxios";
 
 const HomePage = () => {
@@ -7,6 +10,7 @@ const HomePage = () => {
     return (
         <div>
             <Banner></Banner>
+            <Sale></Sale>
             <div>
                 <div className="my-14 flex justify-center rounded-lg">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
@@ -19,6 +23,8 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
+            <Newsletter></Newsletter>
+            <Faq></Faq>
         </div>
     );
 };
